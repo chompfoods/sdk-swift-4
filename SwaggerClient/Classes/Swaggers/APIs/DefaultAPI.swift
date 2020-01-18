@@ -192,6 +192,7 @@ open class DefaultAPI {
       "fat_value" : 1.4894159098541704
     },
     "ingredient_list" : [ "ingredient_list", "ingredient_list" ],
+    "vitamins" : [ "vitamins", "vitamins" ],
     "name" : "name",
     "brand_list" : [ "brand_list", "brand_list" ]
   }, {
@@ -355,6 +356,7 @@ open class DefaultAPI {
       "fat_value" : 1.4894159098541704
     },
     "ingredient_list" : [ "ingredient_list", "ingredient_list" ],
+    "vitamins" : [ "vitamins", "vitamins" ],
     "name" : "name",
     "brand_list" : [ "brand_list", "brand_list" ]
   } ]
@@ -558,6 +560,7 @@ open class DefaultAPI {
       "fat_value" : 1.4894159098541704
     },
     "ingredient_list" : [ "ingredient_list", "ingredient_list" ],
+    "vitamins" : [ "vitamins", "vitamins" ],
     "name" : "name",
     "brand_list" : [ "brand_list", "brand_list" ]
   }, {
@@ -721,6 +724,7 @@ open class DefaultAPI {
       "fat_value" : 1.4894159098541704
     },
     "ingredient_list" : [ "ingredient_list", "ingredient_list" ],
+    "vitamins" : [ "vitamins", "vitamins" ],
     "name" : "name",
     "brand_list" : [ "brand_list", "brand_list" ]
   } ]
@@ -941,6 +945,7 @@ open class DefaultAPI {
       "fat_value" : 1.4894159098541704
     },
     "ingredient_list" : [ "ingredient_list", "ingredient_list" ],
+    "vitamins" : [ "vitamins", "vitamins" ],
     "name" : "name",
     "brand_list" : [ "brand_list", "brand_list" ]
   }, {
@@ -1104,6 +1109,7 @@ open class DefaultAPI {
       "fat_value" : 1.4894159098541704
     },
     "ingredient_list" : [ "ingredient_list", "ingredient_list" ],
+    "vitamins" : [ "vitamins", "vitamins" ],
     "name" : "name",
     "brand_list" : [ "brand_list", "brand_list" ]
   } ]
@@ -1324,6 +1330,7 @@ open class DefaultAPI {
       "fat_value" : 1.4894159098541704
     },
     "ingredient_list" : [ "ingredient_list", "ingredient_list" ],
+    "vitamins" : [ "vitamins", "vitamins" ],
     "name" : "name",
     "brand_list" : [ "brand_list", "brand_list" ]
   }, {
@@ -1487,6 +1494,7 @@ open class DefaultAPI {
       "fat_value" : 1.4894159098541704
     },
     "ingredient_list" : [ "ingredient_list", "ingredient_list" ],
+    "vitamins" : [ "vitamins", "vitamins" ],
     "name" : "name",
     "brand_list" : [ "brand_list", "brand_list" ]
   } ]

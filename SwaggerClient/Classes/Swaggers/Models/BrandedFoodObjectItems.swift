@@ -75,6 +75,9 @@ public struct BrandedFoodObjectItems: Codable {
     /** An array of trace ingredients that may be found in this item */
     public var traces: [String]?
 
+    /** An array of vitamins that can be found in this item */
+    public var vitamins: [String]?
+
     /** Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \&quot;BRAND&#x27;s Spicy Enchilada\&quot; the common name may be \&quot;Chicken enchilada\&quot;) */
     public var commonName: String?
 
@@ -86,7 +89,7 @@ public struct BrandedFoodObjectItems: Codable {
 
     /** Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
     public var footnote: String?
-    public init(barcode: String? = nil, name: String? = nil, brand: String? = nil, ingredients: String? = nil, package: BrandedFoodObjectPackage? = nil, serving: BrandedFoodObjectServing? = nil, categories: [String]? = nil, nutrients: BrandedFoodObjectNutrients? = nil, calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, dietFlags: [BrandedFoodObjectDietFlags]? = nil, packagingPhotos: BrandedFoodObjectPackagingPhotos? = nil, components: [BrandedFoodObjectComponents]? = nil, portions: [BrandedFoodObjectPortions]? = nil, allergens: [String]? = nil, brandList: [String]? = nil, countries: [String]? = nil, countryDetails: BrandedFoodObjectCountryDetails? = nil, palmOilIngredients: [String]? = nil, ingredientList: [String]? = nil, hasEnglishIngredients: Bool? = nil, minerals: [String]? = nil, traces: [String]? = nil, commonName: String? = nil, _description: String? = nil, keywords: [String]? = nil, footnote: String? = nil) { 
+    public init(barcode: String? = nil, name: String? = nil, brand: String? = nil, ingredients: String? = nil, package: BrandedFoodObjectPackage? = nil, serving: BrandedFoodObjectServing? = nil, categories: [String]? = nil, nutrients: BrandedFoodObjectNutrients? = nil, calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, dietFlags: [BrandedFoodObjectDietFlags]? = nil, packagingPhotos: BrandedFoodObjectPackagingPhotos? = nil, components: [BrandedFoodObjectComponents]? = nil, portions: [BrandedFoodObjectPortions]? = nil, allergens: [String]? = nil, brandList: [String]? = nil, countries: [String]? = nil, countryDetails: BrandedFoodObjectCountryDetails? = nil, palmOilIngredients: [String]? = nil, ingredientList: [String]? = nil, hasEnglishIngredients: Bool? = nil, minerals: [String]? = nil, traces: [String]? = nil, vitamins: [String]? = nil, commonName: String? = nil, _description: String? = nil, keywords: [String]? = nil, footnote: String? = nil) { 
         self.barcode = barcode
         self.name = name
         self.brand = brand
@@ -111,6 +114,7 @@ public struct BrandedFoodObjectItems: Codable {
         self.hasEnglishIngredients = hasEnglishIngredients
         self.minerals = minerals
         self.traces = traces
+        self.vitamins = vitamins
         self.commonName = commonName
         self._description = _description
         self.keywords = keywords
@@ -141,6 +145,7 @@ public struct BrandedFoodObjectItems: Codable {
         case hasEnglishIngredients = "has_english_ingredients"
         case minerals
         case traces
+        case vitamins
         case commonName = "common_name"
         case _description = "description"
         case keywords
