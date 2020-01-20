@@ -1533,7 +1533,7 @@ open class DefaultAPI {
     /**
      * enum for parameter limit
      */
-    public enum Limit_ingredientSearchPhpGet: Int { 
+    public enum Limit_foodIngredientSearchPhpGet: Int { 
         case _1 = 1
         case _2 = 2
         case _3 = 3
@@ -1544,8 +1544,8 @@ open class DefaultAPI {
      - parameter find: (query) Specify the ingredient name(s).  __Example #1:__ broccoli  __Example #2:__ broccoli,cauliflower,spinach  ___Important Note:__ Set the \&quot;is_list\&quot; parameter to true before passing in a comma-separated list of ingredients._       - parameter list: (query) Specify if you are searching for multiple ingredients.  _Setting this to true will configure this endpoint so that it accepts a comma-separated list of ingredients._  _By default, this endpoint expects a single ingredient._  __Example:__ true _(defaults to false)_       - parameter raw: (query) Specify if you only want data for raw ingredients.  __Example:__ true _(defaults to true)_  (optional)     - parameter limit: (query) Set maximum number of records you want the API to return.  ___Important Note:__ Setting this to \&quot;1\&quot; will return 1 record per search term._  __Example:__ 1 _(defaults to 1, max is 3)_  (optional)
      - parameter completion: completion handler to receive the data and the error objects
      */
-    open class func ingredientSearchPhpGet(find: Int, list: Bool, raw: Bool? = nil, limit: Limit_ingredientSearchPhpGet? = nil, completion: @escaping ((_ data: IngredientObject?,_ error: Error?) -> Void)) {
-        ingredientSearchPhpGetWithRequestBuilder(find: find, list: list, raw: raw, limit: limit).execute { (response, error) -> Void in
+    open class func foodIngredientSearchPhpGet(find: Int, list: Bool, raw: Bool? = nil, limit: Limit_foodIngredientSearchPhpGet? = nil, completion: @escaping ((_ data: IngredientObject?,_ error: Error?) -> Void)) {
+        foodIngredientSearchPhpGetWithRequestBuilder(find: find, list: list, raw: raw, limit: limit).execute { (response, error) -> Void in
             completion(response?.body, error)
         }
     }
@@ -1553,7 +1553,7 @@ open class DefaultAPI {
 
     /**
      Get raw/generic food ingredient item(s)
-     - GET /ingredient/search.php
+     - GET /food/ingredient/search.php
      - # Get data for a specific ingredient or a specific set of ingredients.  __Example:__ ```https://chompthis.com/api/v2/ingredient/search.php?api_key=API_KEY&find=STRING/LIST&list=BOOLEAN&raw=BOOLEAN``` 
      - API Key:
        - type: apiKey api_key (QUERY)
@@ -1745,8 +1745,8 @@ open class DefaultAPI {
 
      - returns: RequestBuilder<IngredientObject> 
      */
-    open class func ingredientSearchPhpGetWithRequestBuilder(find: Int, list: Bool, raw: Bool? = nil, limit: Limit_ingredientSearchPhpGet? = nil) -> RequestBuilder<IngredientObject> {
-        let path = "/ingredient/search.php"
+    open class func foodIngredientSearchPhpGetWithRequestBuilder(find: Int, list: Bool, raw: Bool? = nil, limit: Limit_foodIngredientSearchPhpGet? = nil) -> RequestBuilder<IngredientObject> {
+        let path = "/food/ingredient/search.php"
         let URLString = SwaggerClientAPI.basePath + path
         let parameters: [String:Any]? = nil
         var url = URLComponents(string: URLString)
