@@ -32,6 +32,9 @@ public struct BrandedFoodObjectNutrientsUsda: Codable {
     /** Median nutrient value */
     public var median: BigDecimal?
 
+    /** Nutrient rank */
+    public var rank: Int?
+
     /** Number of observations on which the value is based */
     public var dataPoints: Int?
 
@@ -39,11 +42,8 @@ public struct BrandedFoodObjectNutrientsUsda: Codable {
     public var footnote: String?
 
     /** Description of the nutrient source */
-    public var source: String?
-
-    /** Description of how the food nutrient value was obtained */
     public var _description: String?
-    public init(_id: Int? = nil, name: String? = nil, per100g: BigDecimal? = nil, measurementUnit: String? = nil, min: BigDecimal? = nil, max: BigDecimal? = nil, median: BigDecimal? = nil, dataPoints: Int? = nil, footnote: String? = nil, source: String? = nil, _description: String? = nil) { 
+    public init(_id: Int? = nil, name: String? = nil, per100g: BigDecimal? = nil, measurementUnit: String? = nil, min: BigDecimal? = nil, max: BigDecimal? = nil, median: BigDecimal? = nil, rank: Int? = nil, dataPoints: Int? = nil, footnote: String? = nil, _description: String? = nil) { 
         self._id = _id
         self.name = name
         self.per100g = per100g
@@ -51,9 +51,9 @@ public struct BrandedFoodObjectNutrientsUsda: Codable {
         self.min = min
         self.max = max
         self.median = median
+        self.rank = rank
         self.dataPoints = dataPoints
         self.footnote = footnote
-        self.source = source
         self._description = _description
     }
     public enum CodingKeys: String, CodingKey { 
@@ -64,9 +64,9 @@ public struct BrandedFoodObjectNutrientsUsda: Codable {
         case min
         case max
         case median
+        case rank
         case dataPoints = "data_points"
         case footnote
-        case source
         case _description = "description"
     }
 
