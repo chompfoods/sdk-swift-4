@@ -11,7 +11,7 @@ import Foundation
 public struct BrandedFoodObjectIngredients: Codable {
 
 
-    /** This item&#x27;s ingredients as seen on ChompThis.com */
+    /** Ingredients for this item from Chomp&#x27;s internal database */
     public var chomp: String?
 
     /** This branded food item&#x27;s ingredients according to the USDA */

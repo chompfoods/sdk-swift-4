@@ -7,7 +7,7 @@
 
 import Foundation
 
-/** Serving information from as seen on ChompThis.com */
+/** Serving information from Chomp&#x27;s internal database */
 public struct BrandedFoodObjectServingChomp: Codable {
 
 
