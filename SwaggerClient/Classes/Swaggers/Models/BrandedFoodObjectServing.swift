@@ -11,23 +11,12 @@ import Foundation
 public struct BrandedFoodObjectServing: Codable {
 
 
-    /** Serving size with measurement unit (e.g. if measure is 3 tsp, the unit is tsp) */
-    public var size: String?
+    public var chomp: BrandedFoodObjectServingChomp?
 
-    /** Serving size description */
-    public var sizeFulltext: String?
-
-    /** Total servings */
-    public var total: Int?
-    public init(size: String? = nil, sizeFulltext: String? = nil, total: Int? = nil) { 
-        self.size = size
-        self.sizeFulltext = sizeFulltext
-        self.total = total
-    }
-    public enum CodingKeys: String, CodingKey { 
-        case size
-        case sizeFulltext = "size_fulltext"
-        case total
+    public var usda: BrandedFoodObjectServingUsda?
+    public init(chomp: BrandedFoodObjectServingChomp? = nil, usda: BrandedFoodObjectServingUsda? = nil) { 
+        self.chomp = chomp
+        self.usda = usda
     }
 
 }
