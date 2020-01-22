@@ -1677,10 +1677,10 @@ open class DefaultAPI {
       }
     },
     "name" : "name",
+    "common_names" : "common_names",
     "description" : "description",
     "categories" : [ "categories", "categories" ],
     "footnote" : "footnote",
-    "common_name" : "common_name",
     "nutrients" : {
       "usda" : [ {
         "data_points" : 4,
@@ -1767,10 +1767,10 @@ open class DefaultAPI {
       }
     },
     "name" : "name",
+    "common_names" : "common_names",
     "description" : "description",
     "categories" : [ "categories", "categories" ],
     "footnote" : "footnote",
-    "common_name" : "common_name",
     "nutrients" : {
       "usda" : [ {
         "data_points" : 4,

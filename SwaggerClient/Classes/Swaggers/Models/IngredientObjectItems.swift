@@ -32,14 +32,14 @@ public struct IngredientObjectItems: Codable {
     public var portions: [BrandedFoodObjectPortions]?
 
     /** Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \&quot;BRAND&#x27;s Spicy Enchilada\&quot; the common name may be \&quot;Chicken enchilada\&quot;) */
-    public var commonName: String?
+    public var commonNames: String?
 
     /** A description of this item */
     public var _description: String?
 
     /** Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
     public var footnote: String?
-    public init(name: String? = nil, categories: [String]? = nil, nutrients: IngredientObjectNutrients? = nil, calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, components: [BrandedFoodObjectComponents]? = nil, portions: [BrandedFoodObjectPortions]? = nil, commonName: String? = nil, _description: String? = nil, footnote: String? = nil) { 
+    public init(name: String? = nil, categories: [String]? = nil, nutrients: IngredientObjectNutrients? = nil, calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, components: [BrandedFoodObjectComponents]? = nil, portions: [BrandedFoodObjectPortions]? = nil, commonNames: String? = nil, _description: String? = nil, footnote: String? = nil) { 
         self.name = name
         self.categories = categories
         self.nutrients = nutrients
@@ -48,7 +48,7 @@ public struct IngredientObjectItems: Codable {
         self.dietLabels = dietLabels
         self.components = components
         self.portions = portions
-        self.commonName = commonName
+        self.commonNames = commonNames
         self._description = _description
         self.footnote = footnote
     }
@@ -61,7 +61,7 @@ public struct IngredientObjectItems: Codable {
         case dietLabels = "diet_labels"
         case components
         case portions
-        case commonName = "common_name"
+        case commonNames = "common_names"
         case _description = "description"
         case footnote
     }
