@@ -15,8 +15,8 @@ public struct BrandedFoodObjectPackage: Codable {
     public var quantity: Int?
 
     /** Package size */
-    public var size: Int?
-    public init(quantity: Int? = nil, size: Int? = nil) { 
+    public var size: String?
+    public init(quantity: Int? = nil, size: String? = nil) { 
         self.quantity = quantity
         self.size = size
     }
