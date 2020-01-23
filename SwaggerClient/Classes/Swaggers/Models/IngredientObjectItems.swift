@@ -26,10 +26,10 @@ public struct IngredientObjectItems: Codable {
     public var dietLabels: BrandedFoodObjectDietLabels?
 
     /** An array of objects containing the constituent parts of a food (e.g. bone is a component of meat) */
-    public var components: [BrandedFoodObjectComponents]?
+    public var components: [IngredientObjectComponents]?
 
     /** An array of objects containing information on discrete amounts of a food found in this item */
-    public var portions: [BrandedFoodObjectPortions]?
+    public var portions: [IngredientObjectPortions]?
 
     /** Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \&quot;BRAND&#x27;s Spicy Enchilada\&quot; the common name may be \&quot;Chicken enchilada\&quot;) */
     public var commonNames: String?
@@ -39,7 +39,7 @@ public struct IngredientObjectItems: Codable {
 
     /** Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
     public var footnote: String?
-    public init(name: String? = nil, categories: [String]? = nil, nutrients: IngredientObjectNutrients? = nil, calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, components: [BrandedFoodObjectComponents]? = nil, portions: [BrandedFoodObjectPortions]? = nil, commonNames: String? = nil, _description: String? = nil, footnote: String? = nil) { 
+    public init(name: String? = nil, categories: [String]? = nil, nutrients: IngredientObjectNutrients? = nil, calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, components: [IngredientObjectComponents]? = nil, portions: [IngredientObjectPortions]? = nil, commonNames: String? = nil, _description: String? = nil, footnote: String? = nil) { 
         self.name = name
         self.categories = categories
         self.nutrients = nutrients
