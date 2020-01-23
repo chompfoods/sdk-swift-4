@@ -149,7 +149,6 @@ open class DefaultAPI {
       "chomp" : "chomp",
       "usda" : "usda"
     },
-    "common_names" : [ "common_names", "common_names" ],
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
@@ -320,7 +319,6 @@ open class DefaultAPI {
       "chomp" : "chomp",
       "usda" : "usda"
     },
-    "common_names" : [ "common_names", "common_names" ],
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
@@ -539,7 +537,6 @@ open class DefaultAPI {
       "chomp" : "chomp",
       "usda" : "usda"
     },
-    "common_names" : [ "common_names", "common_names" ],
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
@@ -710,7 +707,6 @@ open class DefaultAPI {
       "chomp" : "chomp",
       "usda" : "usda"
     },
-    "common_names" : [ "common_names", "common_names" ],
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
@@ -938,7 +934,6 @@ open class DefaultAPI {
       "chomp" : "chomp",
       "usda" : "usda"
     },
-    "common_names" : [ "common_names", "common_names" ],
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
@@ -1109,7 +1104,6 @@ open class DefaultAPI {
       "chomp" : "chomp",
       "usda" : "usda"
     },
-    "common_names" : [ "common_names", "common_names" ],
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
@@ -1347,7 +1341,6 @@ open class DefaultAPI {
       "chomp" : "chomp",
       "usda" : "usda"
     },
-    "common_names" : [ "common_names", "common_names" ],
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
@@ -1518,7 +1511,6 @@ open class DefaultAPI {
       "chomp" : "chomp",
       "usda" : "usda"
     },
-    "common_names" : [ "common_names", "common_names" ],
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
