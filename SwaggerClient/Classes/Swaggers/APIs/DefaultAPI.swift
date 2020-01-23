@@ -872,10 +872,10 @@ open class DefaultAPI {
       }
     },
     "name" : "name",
-    "common_names" : "common_names",
     "description" : "description",
     "categories" : [ "categories", "categories" ],
     "footnote" : "footnote",
+    "common_name" : "common_name",
     "nutrients" : [ {
       "data_points" : 2,
       "min" : 6.027456183070403,
@@ -958,10 +958,10 @@ open class DefaultAPI {
       }
     },
     "name" : "name",
-    "common_names" : "common_names",
     "description" : "description",
     "categories" : [ "categories", "categories" ],
     "footnote" : "footnote",
+    "common_name" : "common_name",
     "nutrients" : [ {
       "data_points" : 2,
       "min" : 6.027456183070403,

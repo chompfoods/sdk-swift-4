@@ -32,15 +32,15 @@ public struct IngredientObjectItems: Codable {
     /** An array of objects containing information on discrete amounts of a food found in this item */
     public var portions: [IngredientObjectPortions]?
 
-    /** Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \&quot;BRAND&#x27;s Spicy Enchilada\&quot; the common name may be \&quot;Chicken enchilada\&quot;) */
-    public var commonNames: String?
+    /** Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \&quot;BRAND&#x27;s Spicy Enchilada\&quot; the common name may be \&quot;Chicken enchilada\&quot;) */
+    public var commonName: String?
 
     /** A description of this item */
     public var _description: String?
 
     /** Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
     public var footnote: String?
-    public init(name: String? = nil, categories: [String]? = nil, nutrients: [IngredientObjectNutrients]? = nil, calorieConversionFactor: IngredientObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, components: [IngredientObjectComponents]? = nil, portions: [IngredientObjectPortions]? = nil, commonNames: String? = nil, _description: String? = nil, footnote: String? = nil) { 
+    public init(name: String? = nil, categories: [String]? = nil, nutrients: [IngredientObjectNutrients]? = nil, calorieConversionFactor: IngredientObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, components: [IngredientObjectComponents]? = nil, portions: [IngredientObjectPortions]? = nil, commonName: String? = nil, _description: String? = nil, footnote: String? = nil) { 
         self.name = name
         self.categories = categories
         self.nutrients = nutrients
@@ -49,7 +49,7 @@ public struct IngredientObjectItems: Codable {
         self.dietLabels = dietLabels
         self.components = components
         self.portions = portions
-        self.commonNames = commonNames
+        self.commonName = commonName
         self._description = _description
         self.footnote = footnote
     }
@@ -62,7 +62,7 @@ public struct IngredientObjectItems: Codable {
         case dietLabels = "diet_labels"
         case components
         case portions
-        case commonNames = "common_names"
+        case commonName = "common_name"
         case _description = "description"
         case footnote
     }
