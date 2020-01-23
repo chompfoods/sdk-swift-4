@@ -20,7 +20,8 @@ public struct BrandedFoodObjectItems: Codable {
     /** The brand name that owns this item */
     public var brand: String?
 
-    public var ingredients: BrandedFoodObjectIngredients?
+    /** This food item&#x27;s ingredients from greatest quantity to least */
+    public var ingredients: String?
 
     public var package: BrandedFoodObjectPackage?
 
@@ -28,7 +29,8 @@ public struct BrandedFoodObjectItems: Codable {
 
     public var categories: [String]?
 
-    public var nutrients: BrandedFoodObjectNutrients?
+    /** An array containing nutrient informatio objects for this food item */
+    public var nutrients: [BrandedFoodObjectNutrients]?
 
     public var dietLabels: BrandedFoodObjectDietLabels?
 
@@ -71,7 +73,7 @@ public struct BrandedFoodObjectItems: Codable {
 
     /** An array of keywords that can be used to describe this item */
     public var keywords: [String]?
-    public init(barcode: String? = nil, name: String? = nil, brand: String? = nil, ingredients: BrandedFoodObjectIngredients? = nil, package: BrandedFoodObjectPackage? = nil, serving: BrandedFoodObjectServing? = nil, categories: [String]? = nil, nutrients: BrandedFoodObjectNutrients? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, dietFlags: [BrandedFoodObjectDietFlags]? = nil, packagingPhotos: BrandedFoodObjectPackagingPhotos? = nil, allergens: [String]? = nil, brandList: [String]? = nil, countries: [String]? = nil, countryDetails: BrandedFoodObjectCountryDetails? = nil, palmOilIngredients: [String]? = nil, ingredientList: [String]? = nil, hasEnglishIngredients: Bool? = nil, minerals: [String]? = nil, traces: [String]? = nil, vitamins: [String]? = nil, _description: String? = nil, keywords: [String]? = nil) { 
+    public init(barcode: String? = nil, name: String? = nil, brand: String? = nil, ingredients: String? = nil, package: BrandedFoodObjectPackage? = nil, serving: BrandedFoodObjectServing? = nil, categories: [String]? = nil, nutrients: [BrandedFoodObjectNutrients]? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, dietFlags: [BrandedFoodObjectDietFlags]? = nil, packagingPhotos: BrandedFoodObjectPackagingPhotos? = nil, allergens: [String]? = nil, brandList: [String]? = nil, countries: [String]? = nil, countryDetails: BrandedFoodObjectCountryDetails? = nil, palmOilIngredients: [String]? = nil, ingredientList: [String]? = nil, hasEnglishIngredients: Bool? = nil, minerals: [String]? = nil, traces: [String]? = nil, vitamins: [String]? = nil, _description: String? = nil, keywords: [String]? = nil) { 
         self.barcode = barcode
         self.name = name
         self.brand = brand

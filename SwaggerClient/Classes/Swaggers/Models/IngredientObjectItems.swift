@@ -16,7 +16,8 @@ public struct IngredientObjectItems: Codable {
 
     public var categories: [String]?
 
-    public var nutrients: IngredientObjectNutrients?
+    /** An array containing nutrient informatio objects for this food item */
+    public var nutrients: [IngredientObjectNutrients]?
 
     public var calorieConversionFactor: IngredientObjectCalorieConversionFactor?
 
@@ -39,7 +40,7 @@ public struct IngredientObjectItems: Codable {
 
     /** Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
     public var footnote: String?
-    public init(name: String? = nil, categories: [String]? = nil, nutrients: IngredientObjectNutrients? = nil, calorieConversionFactor: IngredientObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, components: [IngredientObjectComponents]? = nil, portions: [IngredientObjectPortions]? = nil, commonNames: String? = nil, _description: String? = nil, footnote: String? = nil) { 
+    public init(name: String? = nil, categories: [String]? = nil, nutrients: [IngredientObjectNutrients]? = nil, calorieConversionFactor: IngredientObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, components: [IngredientObjectComponents]? = nil, portions: [IngredientObjectPortions]? = nil, commonNames: String? = nil, _description: String? = nil, footnote: String? = nil) { 
         self.name = name
         self.categories = categories
         self.nutrients = nutrients

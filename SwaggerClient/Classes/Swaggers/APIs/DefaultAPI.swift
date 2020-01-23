@@ -39,8 +39,8 @@ open class DefaultAPI {
     },
     "keywords" : [ "keywords", "keywords" ],
     "country_details" : {
-      "english_speaking" : 4,
-      "non_english_speaking" : 5
+      "english_speaking" : 7,
+      "non_english_speaking" : 1
     },
     "traces" : [ "traces", "traces" ],
     "description" : "description",
@@ -48,7 +48,7 @@ open class DefaultAPI {
       "ingredient" : "ingredient",
       "is_allergen" : true,
       "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
+      "compatibility_level" : 4,
       "is_compatible" : "is_compatible",
       "diet_label" : "diet_label",
       "compatibility_description" : "compatibility_description"
@@ -56,7 +56,7 @@ open class DefaultAPI {
       "ingredient" : "ingredient",
       "is_allergen" : true,
       "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
+      "compatibility_level" : 4,
       "is_compatible" : "is_compatible",
       "diet_label" : "diet_label",
       "compatibility_description" : "compatibility_description"
@@ -65,55 +65,25 @@ open class DefaultAPI {
     "has_english_ingredients" : true,
     "palm_oil_ingredients" : [ "palm_oil_ingredients", "palm_oil_ingredients" ],
     "serving" : {
-      "chomp" : {
-        "size" : "size"
-      },
-      "usda" : {
-        "size_fulltext" : "size_fulltext",
-        "size" : "size",
-        "measurement_unit" : "measurement_unit"
-      }
+      "size_fulltext" : "size_fulltext",
+      "size" : "size",
+      "measurement_unit" : "measurement_unit"
     },
-    "nutrients" : {
-      "chomp" : [ {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      }, {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      } ],
-      "usda" : [ {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      }, {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      } ]
-    },
+    "nutrients" : [ {
+      "data_points" : 5,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 1,
+      "description" : "description",
+      "per_100g" : 6.027456183070403
+    }, {
+      "data_points" : 5,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 1,
+      "description" : "description",
+      "per_100g" : 6.027456183070403
+    } ],
     "allergens" : [ "allergens", "allergens" ],
     "packaging_photos" : {
       "nutrition" : {
@@ -137,31 +107,28 @@ open class DefaultAPI {
     "diet_labels" : {
       "vegetarian" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 1,
-        "name" : "name",
-        "compatibility_level" : 1,
-        "is_compatible" : true
-      },
-      "vegan" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 1,
+        "confidence" : 9,
         "name" : "name",
         "compatibility_level" : 7,
         "is_compatible" : true
       },
+      "vegan" : {
+        "confidence_description" : "confidence_description",
+        "confidence" : 2,
+        "name" : "name",
+        "compatibility_level" : 5,
+        "is_compatible" : true
+      },
       "gluten_free" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 7,
+        "confidence" : 2,
         "name" : "name",
-        "compatibility_level" : 6,
+        "compatibility_level" : 3,
         "is_compatible" : true
       }
     },
     "name" : "name",
-    "ingredients" : {
-      "chomp" : "chomp",
-      "usda" : "usda"
-    },
+    "ingredients" : "ingredients",
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
@@ -174,8 +141,8 @@ open class DefaultAPI {
     },
     "keywords" : [ "keywords", "keywords" ],
     "country_details" : {
-      "english_speaking" : 4,
-      "non_english_speaking" : 5
+      "english_speaking" : 7,
+      "non_english_speaking" : 1
     },
     "traces" : [ "traces", "traces" ],
     "description" : "description",
@@ -183,7 +150,7 @@ open class DefaultAPI {
       "ingredient" : "ingredient",
       "is_allergen" : true,
       "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
+      "compatibility_level" : 4,
       "is_compatible" : "is_compatible",
       "diet_label" : "diet_label",
       "compatibility_description" : "compatibility_description"
@@ -191,7 +158,7 @@ open class DefaultAPI {
       "ingredient" : "ingredient",
       "is_allergen" : true,
       "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
+      "compatibility_level" : 4,
       "is_compatible" : "is_compatible",
       "diet_label" : "diet_label",
       "compatibility_description" : "compatibility_description"
@@ -200,55 +167,25 @@ open class DefaultAPI {
     "has_english_ingredients" : true,
     "palm_oil_ingredients" : [ "palm_oil_ingredients", "palm_oil_ingredients" ],
     "serving" : {
-      "chomp" : {
-        "size" : "size"
-      },
-      "usda" : {
-        "size_fulltext" : "size_fulltext",
-        "size" : "size",
-        "measurement_unit" : "measurement_unit"
-      }
+      "size_fulltext" : "size_fulltext",
+      "size" : "size",
+      "measurement_unit" : "measurement_unit"
     },
-    "nutrients" : {
-      "chomp" : [ {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      }, {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      } ],
-      "usda" : [ {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      }, {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      } ]
-    },
+    "nutrients" : [ {
+      "data_points" : 5,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 1,
+      "description" : "description",
+      "per_100g" : 6.027456183070403
+    }, {
+      "data_points" : 5,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 1,
+      "description" : "description",
+      "per_100g" : 6.027456183070403
+    } ],
     "allergens" : [ "allergens", "allergens" ],
     "packaging_photos" : {
       "nutrition" : {
@@ -272,31 +209,28 @@ open class DefaultAPI {
     "diet_labels" : {
       "vegetarian" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 1,
-        "name" : "name",
-        "compatibility_level" : 1,
-        "is_compatible" : true
-      },
-      "vegan" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 1,
+        "confidence" : 9,
         "name" : "name",
         "compatibility_level" : 7,
         "is_compatible" : true
       },
+      "vegan" : {
+        "confidence_description" : "confidence_description",
+        "confidence" : 2,
+        "name" : "name",
+        "compatibility_level" : 5,
+        "is_compatible" : true
+      },
       "gluten_free" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 7,
+        "confidence" : 2,
         "name" : "name",
-        "compatibility_level" : 6,
+        "compatibility_level" : 3,
         "is_compatible" : true
       }
     },
     "name" : "name",
-    "ingredients" : {
-      "chomp" : "chomp",
-      "usda" : "usda"
-    },
+    "ingredients" : "ingredients",
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
@@ -314,325 +248,6 @@ open class DefaultAPI {
         var url = URLComponents(string: URLString)
         url?.queryItems = APIHelper.mapValuesToQueryItems([
                         "code": code
-        ])
-
-        let requestBuilder: RequestBuilder<BrandedFoodObject>.Type = SwaggerClientAPI.requestBuilderFactory.getBuilder()
-
-        return requestBuilder.init(method: "GET", URLString: (url?.string ?? URLString), parameters: parameters, isBody: false)
-    }
-
-    /**
-     * enum for parameter source
-     */
-    public enum Source_foodBrandedIdPhpGet: String { 
-        case chomp = "Chomp"
-        case usda = "USDA"
-    }
-
-    /**
-     Get a branded food item using an ID number
-     - parameter _id: (query) #### The ID number of a branded food item.  **Example #1: Using Chomp ID** &gt; &#x60;&#x60;&#x60;&amp;id&#x3D;15&#x60;&#x60;&#x60;  **Example #2: Using FDC ID** &gt; &#x60;&#x60;&#x60;&amp;id&#x3D;FDC_ID&amp;source&#x3D;USDA&#x60;&#x60;&#x60;       - parameter source: (query) #### Configure the endpoint to accept food IDs from various data sources. This endpoint defaults to Chomp but can accept FDC IDs.  **Example** &gt; &#x60;&#x60;&#x60;&amp;source&#x3D;Chomp&#x60;&#x60;&#x60;  **Tips**   * Pass in &#x60;&#x60;&#x60;&amp;source&#x3D;USDA&#x60;&#x60;&#x60; if you want to look up food items using a USDA FDC ID.  (optional)
-     - parameter completion: completion handler to receive the data and the error objects
-     */
-    open class func foodBrandedIdPhpGet(_id: Int, source: Source_foodBrandedIdPhpGet? = nil, completion: @escaping ((_ data: BrandedFoodObject?,_ error: Error?) -> Void)) {
-        foodBrandedIdPhpGetWithRequestBuilder(_id: _id, source: source).execute { (response, error) -> Void in
-            completion(response?.body, error)
-        }
-    }
-
-
-    /**
-     Get a branded food item using an ID number
-     - GET /food/branded/id.php
-     - ## Get data for a branded food using Chomp's internal ID number.  **Example** > ```https://chompthis.com/api/v2/food/branded/id.php?api_key=API_KEY&id=ID```  **Tips**   * Find a food's ID by using our **[food lookup tool](https://chompthis.com/api/lookup.php)**.   * Alternatively, set the \"source\" parameter to \"USDA\" and use the food's FDC ID. 
-     - API Key:
-       - type: apiKey api_key (QUERY)
-       - name: ApiKeyAuth
-     - examples: [{contentType=application/json, example={
-  "items" : [ {
-    "minerals" : [ "minerals", "minerals" ],
-    "package" : {
-      "quantity" : 0,
-      "size" : "size"
-    },
-    "keywords" : [ "keywords", "keywords" ],
-    "country_details" : {
-      "english_speaking" : 4,
-      "non_english_speaking" : 5
-    },
-    "traces" : [ "traces", "traces" ],
-    "description" : "description",
-    "diet_flags" : [ {
-      "ingredient" : "ingredient",
-      "is_allergen" : true,
-      "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
-      "is_compatible" : "is_compatible",
-      "diet_label" : "diet_label",
-      "compatibility_description" : "compatibility_description"
-    }, {
-      "ingredient" : "ingredient",
-      "is_allergen" : true,
-      "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
-      "is_compatible" : "is_compatible",
-      "diet_label" : "diet_label",
-      "compatibility_description" : "compatibility_description"
-    } ],
-    "countries" : [ "countries", "countries" ],
-    "has_english_ingredients" : true,
-    "palm_oil_ingredients" : [ "palm_oil_ingredients", "palm_oil_ingredients" ],
-    "serving" : {
-      "chomp" : {
-        "size" : "size"
-      },
-      "usda" : {
-        "size_fulltext" : "size_fulltext",
-        "size" : "size",
-        "measurement_unit" : "measurement_unit"
-      }
-    },
-    "nutrients" : {
-      "chomp" : [ {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      }, {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      } ],
-      "usda" : [ {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      }, {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      } ]
-    },
-    "allergens" : [ "allergens", "allergens" ],
-    "packaging_photos" : {
-      "nutrition" : {
-        "small" : "small",
-        "thumb" : "thumb",
-        "display" : "display"
-      },
-      "ingredients" : {
-        "small" : "small",
-        "thumb" : "thumb",
-        "display" : "display"
-      },
-      "front" : {
-        "small" : "small",
-        "thumb" : "thumb",
-        "display" : "display"
-      }
-    },
-    "ingredient_list" : [ "ingredient_list", "ingredient_list" ],
-    "vitamins" : [ "vitamins", "vitamins" ],
-    "diet_labels" : {
-      "vegetarian" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 1,
-        "name" : "name",
-        "compatibility_level" : 1,
-        "is_compatible" : true
-      },
-      "vegan" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 1,
-        "name" : "name",
-        "compatibility_level" : 7,
-        "is_compatible" : true
-      },
-      "gluten_free" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 7,
-        "name" : "name",
-        "compatibility_level" : 6,
-        "is_compatible" : true
-      }
-    },
-    "name" : "name",
-    "ingredients" : {
-      "chomp" : "chomp",
-      "usda" : "usda"
-    },
-    "categories" : [ "categories", "categories" ],
-    "barcode" : "barcode",
-    "brand" : "brand",
-    "brand_list" : [ "brand_list", "brand_list" ]
-  }, {
-    "minerals" : [ "minerals", "minerals" ],
-    "package" : {
-      "quantity" : 0,
-      "size" : "size"
-    },
-    "keywords" : [ "keywords", "keywords" ],
-    "country_details" : {
-      "english_speaking" : 4,
-      "non_english_speaking" : 5
-    },
-    "traces" : [ "traces", "traces" ],
-    "description" : "description",
-    "diet_flags" : [ {
-      "ingredient" : "ingredient",
-      "is_allergen" : true,
-      "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
-      "is_compatible" : "is_compatible",
-      "diet_label" : "diet_label",
-      "compatibility_description" : "compatibility_description"
-    }, {
-      "ingredient" : "ingredient",
-      "is_allergen" : true,
-      "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
-      "is_compatible" : "is_compatible",
-      "diet_label" : "diet_label",
-      "compatibility_description" : "compatibility_description"
-    } ],
-    "countries" : [ "countries", "countries" ],
-    "has_english_ingredients" : true,
-    "palm_oil_ingredients" : [ "palm_oil_ingredients", "palm_oil_ingredients" ],
-    "serving" : {
-      "chomp" : {
-        "size" : "size"
-      },
-      "usda" : {
-        "size_fulltext" : "size_fulltext",
-        "size" : "size",
-        "measurement_unit" : "measurement_unit"
-      }
-    },
-    "nutrients" : {
-      "chomp" : [ {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      }, {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      } ],
-      "usda" : [ {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      }, {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      } ]
-    },
-    "allergens" : [ "allergens", "allergens" ],
-    "packaging_photos" : {
-      "nutrition" : {
-        "small" : "small",
-        "thumb" : "thumb",
-        "display" : "display"
-      },
-      "ingredients" : {
-        "small" : "small",
-        "thumb" : "thumb",
-        "display" : "display"
-      },
-      "front" : {
-        "small" : "small",
-        "thumb" : "thumb",
-        "display" : "display"
-      }
-    },
-    "ingredient_list" : [ "ingredient_list", "ingredient_list" ],
-    "vitamins" : [ "vitamins", "vitamins" ],
-    "diet_labels" : {
-      "vegetarian" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 1,
-        "name" : "name",
-        "compatibility_level" : 1,
-        "is_compatible" : true
-      },
-      "vegan" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 1,
-        "name" : "name",
-        "compatibility_level" : 7,
-        "is_compatible" : true
-      },
-      "gluten_free" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 7,
-        "name" : "name",
-        "compatibility_level" : 6,
-        "is_compatible" : true
-      }
-    },
-    "name" : "name",
-    "ingredients" : {
-      "chomp" : "chomp",
-      "usda" : "usda"
-    },
-    "categories" : [ "categories", "categories" ],
-    "barcode" : "barcode",
-    "brand" : "brand",
-    "brand_list" : [ "brand_list", "brand_list" ]
-  } ]
-}}]
-     - parameter _id: (query) #### The ID number of a branded food item.  **Example #1: Using Chomp ID** &gt; &#x60;&#x60;&#x60;&amp;id&#x3D;15&#x60;&#x60;&#x60;  **Example #2: Using FDC ID** &gt; &#x60;&#x60;&#x60;&amp;id&#x3D;FDC_ID&amp;source&#x3D;USDA&#x60;&#x60;&#x60;       - parameter source: (query) #### Configure the endpoint to accept food IDs from various data sources. This endpoint defaults to Chomp but can accept FDC IDs.  **Example** &gt; &#x60;&#x60;&#x60;&amp;source&#x3D;Chomp&#x60;&#x60;&#x60;  **Tips**   * Pass in &#x60;&#x60;&#x60;&amp;source&#x3D;USDA&#x60;&#x60;&#x60; if you want to look up food items using a USDA FDC ID.  (optional)
-
-     - returns: RequestBuilder<BrandedFoodObject> 
-     */
-    open class func foodBrandedIdPhpGetWithRequestBuilder(_id: Int, source: Source_foodBrandedIdPhpGet? = nil) -> RequestBuilder<BrandedFoodObject> {
-        let path = "/food/branded/id.php"
-        let URLString = SwaggerClientAPI.basePath + path
-        let parameters: [String:Any]? = nil
-        var url = URLComponents(string: URLString)
-        url?.queryItems = APIHelper.mapValuesToQueryItems([
-                        "id": _id.encodeToJSON(), 
-                        "source": source?.rawValue
         ])
 
         let requestBuilder: RequestBuilder<BrandedFoodObject>.Type = SwaggerClientAPI.requestBuilderFactory.getBuilder()
@@ -684,8 +299,8 @@ open class DefaultAPI {
     },
     "keywords" : [ "keywords", "keywords" ],
     "country_details" : {
-      "english_speaking" : 4,
-      "non_english_speaking" : 5
+      "english_speaking" : 7,
+      "non_english_speaking" : 1
     },
     "traces" : [ "traces", "traces" ],
     "description" : "description",
@@ -693,7 +308,7 @@ open class DefaultAPI {
       "ingredient" : "ingredient",
       "is_allergen" : true,
       "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
+      "compatibility_level" : 4,
       "is_compatible" : "is_compatible",
       "diet_label" : "diet_label",
       "compatibility_description" : "compatibility_description"
@@ -701,7 +316,7 @@ open class DefaultAPI {
       "ingredient" : "ingredient",
       "is_allergen" : true,
       "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
+      "compatibility_level" : 4,
       "is_compatible" : "is_compatible",
       "diet_label" : "diet_label",
       "compatibility_description" : "compatibility_description"
@@ -710,55 +325,25 @@ open class DefaultAPI {
     "has_english_ingredients" : true,
     "palm_oil_ingredients" : [ "palm_oil_ingredients", "palm_oil_ingredients" ],
     "serving" : {
-      "chomp" : {
-        "size" : "size"
-      },
-      "usda" : {
-        "size_fulltext" : "size_fulltext",
-        "size" : "size",
-        "measurement_unit" : "measurement_unit"
-      }
+      "size_fulltext" : "size_fulltext",
+      "size" : "size",
+      "measurement_unit" : "measurement_unit"
     },
-    "nutrients" : {
-      "chomp" : [ {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      }, {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      } ],
-      "usda" : [ {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      }, {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      } ]
-    },
+    "nutrients" : [ {
+      "data_points" : 5,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 1,
+      "description" : "description",
+      "per_100g" : 6.027456183070403
+    }, {
+      "data_points" : 5,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 1,
+      "description" : "description",
+      "per_100g" : 6.027456183070403
+    } ],
     "allergens" : [ "allergens", "allergens" ],
     "packaging_photos" : {
       "nutrition" : {
@@ -782,31 +367,28 @@ open class DefaultAPI {
     "diet_labels" : {
       "vegetarian" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 1,
-        "name" : "name",
-        "compatibility_level" : 1,
-        "is_compatible" : true
-      },
-      "vegan" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 1,
+        "confidence" : 9,
         "name" : "name",
         "compatibility_level" : 7,
         "is_compatible" : true
       },
+      "vegan" : {
+        "confidence_description" : "confidence_description",
+        "confidence" : 2,
+        "name" : "name",
+        "compatibility_level" : 5,
+        "is_compatible" : true
+      },
       "gluten_free" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 7,
+        "confidence" : 2,
         "name" : "name",
-        "compatibility_level" : 6,
+        "compatibility_level" : 3,
         "is_compatible" : true
       }
     },
     "name" : "name",
-    "ingredients" : {
-      "chomp" : "chomp",
-      "usda" : "usda"
-    },
+    "ingredients" : "ingredients",
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
@@ -819,8 +401,8 @@ open class DefaultAPI {
     },
     "keywords" : [ "keywords", "keywords" ],
     "country_details" : {
-      "english_speaking" : 4,
-      "non_english_speaking" : 5
+      "english_speaking" : 7,
+      "non_english_speaking" : 1
     },
     "traces" : [ "traces", "traces" ],
     "description" : "description",
@@ -828,7 +410,7 @@ open class DefaultAPI {
       "ingredient" : "ingredient",
       "is_allergen" : true,
       "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
+      "compatibility_level" : 4,
       "is_compatible" : "is_compatible",
       "diet_label" : "diet_label",
       "compatibility_description" : "compatibility_description"
@@ -836,7 +418,7 @@ open class DefaultAPI {
       "ingredient" : "ingredient",
       "is_allergen" : true,
       "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
+      "compatibility_level" : 4,
       "is_compatible" : "is_compatible",
       "diet_label" : "diet_label",
       "compatibility_description" : "compatibility_description"
@@ -845,55 +427,25 @@ open class DefaultAPI {
     "has_english_ingredients" : true,
     "palm_oil_ingredients" : [ "palm_oil_ingredients", "palm_oil_ingredients" ],
     "serving" : {
-      "chomp" : {
-        "size" : "size"
-      },
-      "usda" : {
-        "size_fulltext" : "size_fulltext",
-        "size" : "size",
-        "measurement_unit" : "measurement_unit"
-      }
+      "size_fulltext" : "size_fulltext",
+      "size" : "size",
+      "measurement_unit" : "measurement_unit"
     },
-    "nutrients" : {
-      "chomp" : [ {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      }, {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      } ],
-      "usda" : [ {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      }, {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      } ]
-    },
+    "nutrients" : [ {
+      "data_points" : 5,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 1,
+      "description" : "description",
+      "per_100g" : 6.027456183070403
+    }, {
+      "data_points" : 5,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 1,
+      "description" : "description",
+      "per_100g" : 6.027456183070403
+    } ],
     "allergens" : [ "allergens", "allergens" ],
     "packaging_photos" : {
       "nutrition" : {
@@ -917,31 +469,28 @@ open class DefaultAPI {
     "diet_labels" : {
       "vegetarian" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 1,
-        "name" : "name",
-        "compatibility_level" : 1,
-        "is_compatible" : true
-      },
-      "vegan" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 1,
+        "confidence" : 9,
         "name" : "name",
         "compatibility_level" : 7,
         "is_compatible" : true
       },
+      "vegan" : {
+        "confidence_description" : "confidence_description",
+        "confidence" : 2,
+        "name" : "name",
+        "compatibility_level" : 5,
+        "is_compatible" : true
+      },
       "gluten_free" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 7,
+        "confidence" : 2,
         "name" : "name",
-        "compatibility_level" : 6,
+        "compatibility_level" : 3,
         "is_compatible" : true
       }
     },
     "name" : "name",
-    "ingredients" : {
-      "chomp" : "chomp",
-      "usda" : "usda"
-    },
+    "ingredients" : "ingredients",
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
@@ -1021,8 +570,8 @@ open class DefaultAPI {
     },
     "keywords" : [ "keywords", "keywords" ],
     "country_details" : {
-      "english_speaking" : 4,
-      "non_english_speaking" : 5
+      "english_speaking" : 7,
+      "non_english_speaking" : 1
     },
     "traces" : [ "traces", "traces" ],
     "description" : "description",
@@ -1030,7 +579,7 @@ open class DefaultAPI {
       "ingredient" : "ingredient",
       "is_allergen" : true,
       "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
+      "compatibility_level" : 4,
       "is_compatible" : "is_compatible",
       "diet_label" : "diet_label",
       "compatibility_description" : "compatibility_description"
@@ -1038,7 +587,7 @@ open class DefaultAPI {
       "ingredient" : "ingredient",
       "is_allergen" : true,
       "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
+      "compatibility_level" : 4,
       "is_compatible" : "is_compatible",
       "diet_label" : "diet_label",
       "compatibility_description" : "compatibility_description"
@@ -1047,55 +596,25 @@ open class DefaultAPI {
     "has_english_ingredients" : true,
     "palm_oil_ingredients" : [ "palm_oil_ingredients", "palm_oil_ingredients" ],
     "serving" : {
-      "chomp" : {
-        "size" : "size"
-      },
-      "usda" : {
-        "size_fulltext" : "size_fulltext",
-        "size" : "size",
-        "measurement_unit" : "measurement_unit"
-      }
+      "size_fulltext" : "size_fulltext",
+      "size" : "size",
+      "measurement_unit" : "measurement_unit"
     },
-    "nutrients" : {
-      "chomp" : [ {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      }, {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      } ],
-      "usda" : [ {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      }, {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      } ]
-    },
+    "nutrients" : [ {
+      "data_points" : 5,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 1,
+      "description" : "description",
+      "per_100g" : 6.027456183070403
+    }, {
+      "data_points" : 5,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 1,
+      "description" : "description",
+      "per_100g" : 6.027456183070403
+    } ],
     "allergens" : [ "allergens", "allergens" ],
     "packaging_photos" : {
       "nutrition" : {
@@ -1119,31 +638,28 @@ open class DefaultAPI {
     "diet_labels" : {
       "vegetarian" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 1,
-        "name" : "name",
-        "compatibility_level" : 1,
-        "is_compatible" : true
-      },
-      "vegan" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 1,
+        "confidence" : 9,
         "name" : "name",
         "compatibility_level" : 7,
         "is_compatible" : true
       },
+      "vegan" : {
+        "confidence_description" : "confidence_description",
+        "confidence" : 2,
+        "name" : "name",
+        "compatibility_level" : 5,
+        "is_compatible" : true
+      },
       "gluten_free" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 7,
+        "confidence" : 2,
         "name" : "name",
-        "compatibility_level" : 6,
+        "compatibility_level" : 3,
         "is_compatible" : true
       }
     },
     "name" : "name",
-    "ingredients" : {
-      "chomp" : "chomp",
-      "usda" : "usda"
-    },
+    "ingredients" : "ingredients",
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
@@ -1156,8 +672,8 @@ open class DefaultAPI {
     },
     "keywords" : [ "keywords", "keywords" ],
     "country_details" : {
-      "english_speaking" : 4,
-      "non_english_speaking" : 5
+      "english_speaking" : 7,
+      "non_english_speaking" : 1
     },
     "traces" : [ "traces", "traces" ],
     "description" : "description",
@@ -1165,7 +681,7 @@ open class DefaultAPI {
       "ingredient" : "ingredient",
       "is_allergen" : true,
       "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
+      "compatibility_level" : 4,
       "is_compatible" : "is_compatible",
       "diet_label" : "diet_label",
       "compatibility_description" : "compatibility_description"
@@ -1173,7 +689,7 @@ open class DefaultAPI {
       "ingredient" : "ingredient",
       "is_allergen" : true,
       "ingredient_description" : "ingredient_description",
-      "compatibility_level" : 1,
+      "compatibility_level" : 4,
       "is_compatible" : "is_compatible",
       "diet_label" : "diet_label",
       "compatibility_description" : "compatibility_description"
@@ -1182,55 +698,25 @@ open class DefaultAPI {
     "has_english_ingredients" : true,
     "palm_oil_ingredients" : [ "palm_oil_ingredients", "palm_oil_ingredients" ],
     "serving" : {
-      "chomp" : {
-        "size" : "size"
-      },
-      "usda" : {
-        "size_fulltext" : "size_fulltext",
-        "size" : "size",
-        "measurement_unit" : "measurement_unit"
-      }
+      "size_fulltext" : "size_fulltext",
+      "size" : "size",
+      "measurement_unit" : "measurement_unit"
     },
-    "nutrients" : {
-      "chomp" : [ {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      }, {
-        "total" : 5.962133916683182,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "per_100g" : 6.027456183070403,
-        "per_serving" : 1.4658129805029452
-      } ],
-      "usda" : [ {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      }, {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      } ]
-    },
+    "nutrients" : [ {
+      "data_points" : 5,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 1,
+      "description" : "description",
+      "per_100g" : 6.027456183070403
+    }, {
+      "data_points" : 5,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 1,
+      "description" : "description",
+      "per_100g" : 6.027456183070403
+    } ],
     "allergens" : [ "allergens", "allergens" ],
     "packaging_photos" : {
       "nutrition" : {
@@ -1254,31 +740,28 @@ open class DefaultAPI {
     "diet_labels" : {
       "vegetarian" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 1,
-        "name" : "name",
-        "compatibility_level" : 1,
-        "is_compatible" : true
-      },
-      "vegan" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 1,
+        "confidence" : 9,
         "name" : "name",
         "compatibility_level" : 7,
         "is_compatible" : true
       },
+      "vegan" : {
+        "confidence_description" : "confidence_description",
+        "confidence" : 2,
+        "name" : "name",
+        "compatibility_level" : 5,
+        "is_compatible" : true
+      },
       "gluten_free" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 7,
+        "confidence" : 2,
         "name" : "name",
-        "compatibility_level" : 6,
+        "compatibility_level" : 3,
         "is_compatible" : true
       }
     },
     "name" : "name",
-    "ingredients" : {
-      "chomp" : "chomp",
-      "usda" : "usda"
-    },
+    "ingredients" : "ingredients",
     "categories" : [ "categories", "categories" ],
     "barcode" : "barcode",
     "brand" : "brand",
@@ -1346,45 +829,45 @@ open class DefaultAPI {
        - name: ApiKeyAuth
      - examples: [{contentType=application/json, example={
   "items" : [ {
-    "protein_conversion_factor" : 5.962133916683182,
+    "protein_conversion_factor" : 2.027123023002322,
     "calorie_conversion_factor" : {
-      "carbohydrate_value" : 1.4658129805029452,
-      "protein_value" : 0.8008281904610115,
-      "fat_value" : 6.027456183070403
+      "carbohydrate_value" : 3.616076749251911,
+      "protein_value" : 7.061401241503109,
+      "fat_value" : 9.301444243932576
     },
     "components" : [ {
-      "data_points" : 7,
-      "pct_weight" : 5.637376656633329,
-      "gram_weight" : 2.3021358869347655,
+      "data_points" : 1,
+      "pct_weight" : 4.145608029883936,
+      "gram_weight" : 7.386281948385884,
       "name" : "name",
       "is_refuse" : true
     }, {
-      "data_points" : 7,
-      "pct_weight" : 5.637376656633329,
-      "gram_weight" : 2.3021358869347655,
+      "data_points" : 1,
+      "pct_weight" : 4.145608029883936,
+      "gram_weight" : 7.386281948385884,
       "name" : "name",
       "is_refuse" : true
     } ],
     "diet_labels" : {
       "vegetarian" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 1,
-        "name" : "name",
-        "compatibility_level" : 1,
-        "is_compatible" : true
-      },
-      "vegan" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 1,
+        "confidence" : 9,
         "name" : "name",
         "compatibility_level" : 7,
         "is_compatible" : true
       },
+      "vegan" : {
+        "confidence_description" : "confidence_description",
+        "confidence" : 2,
+        "name" : "name",
+        "compatibility_level" : 5,
+        "is_compatible" : true
+      },
       "gluten_free" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 7,
+        "confidence" : 2,
         "name" : "name",
-        "compatibility_level" : 6,
+        "compatibility_level" : 3,
         "is_compatible" : true
       }
     },
@@ -1393,88 +876,84 @@ open class DefaultAPI {
     "description" : "description",
     "categories" : [ "categories", "categories" ],
     "footnote" : "footnote",
-    "nutrients" : {
-      "usda" : [ {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      }, {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      } ]
-    },
+    "nutrients" : [ {
+      "data_points" : 2,
+      "min" : 6.027456183070403,
+      "median" : 5.962133916683182,
+      "max" : 1.4658129805029452,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 5,
+      "description" : "description",
+      "per_100g" : 0.8008281904610115,
+      "footnote" : "footnote"
+    }, {
+      "data_points" : 2,
+      "min" : 6.027456183070403,
+      "median" : 5.962133916683182,
+      "max" : 1.4658129805029452,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 5,
+      "description" : "description",
+      "per_100g" : 0.8008281904610115,
+      "footnote" : "footnote"
+    } ],
     "portions" : [ {
-      "data_points" : 3,
+      "data_points" : 1,
       "modifier" : "modifier",
-      "gram_weight" : 9.301444243932576,
+      "gram_weight" : 1.0246457001441578,
       "measurement_unit" : "measurement_unit",
       "description" : "description",
       "footnote" : "footnote"
     }, {
-      "data_points" : 3,
+      "data_points" : 1,
       "modifier" : "modifier",
-      "gram_weight" : 9.301444243932576,
+      "gram_weight" : 1.0246457001441578,
       "measurement_unit" : "measurement_unit",
       "description" : "description",
       "footnote" : "footnote"
     } ]
   }, {
-    "protein_conversion_factor" : 5.962133916683182,
+    "protein_conversion_factor" : 2.027123023002322,
     "calorie_conversion_factor" : {
-      "carbohydrate_value" : 1.4658129805029452,
-      "protein_value" : 0.8008281904610115,
-      "fat_value" : 6.027456183070403
+      "carbohydrate_value" : 3.616076749251911,
+      "protein_value" : 7.061401241503109,
+      "fat_value" : 9.301444243932576
     },
     "components" : [ {
-      "data_points" : 7,
-      "pct_weight" : 5.637376656633329,
-      "gram_weight" : 2.3021358869347655,
+      "data_points" : 1,
+      "pct_weight" : 4.145608029883936,
+      "gram_weight" : 7.386281948385884,
       "name" : "name",
       "is_refuse" : true
     }, {
-      "data_points" : 7,
-      "pct_weight" : 5.637376656633329,
-      "gram_weight" : 2.3021358869347655,
+      "data_points" : 1,
+      "pct_weight" : 4.145608029883936,
+      "gram_weight" : 7.386281948385884,
       "name" : "name",
       "is_refuse" : true
     } ],
     "diet_labels" : {
       "vegetarian" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 1,
-        "name" : "name",
-        "compatibility_level" : 1,
-        "is_compatible" : true
-      },
-      "vegan" : {
-        "confidence_description" : "confidence_description",
-        "confidence" : 1,
+        "confidence" : 9,
         "name" : "name",
         "compatibility_level" : 7,
         "is_compatible" : true
       },
+      "vegan" : {
+        "confidence_description" : "confidence_description",
+        "confidence" : 2,
+        "name" : "name",
+        "compatibility_level" : 5,
+        "is_compatible" : true
+      },
       "gluten_free" : {
         "confidence_description" : "confidence_description",
-        "confidence" : 7,
+        "confidence" : 2,
         "name" : "name",
-        "compatibility_level" : 6,
+        "compatibility_level" : 3,
         "is_compatible" : true
       }
     },
@@ -1483,44 +962,40 @@ open class DefaultAPI {
     "description" : "description",
     "categories" : [ "categories", "categories" ],
     "footnote" : "footnote",
-    "nutrients" : {
-      "usda" : [ {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      }, {
-        "data_points" : 4,
-        "min" : 7.061401241503109,
-        "median" : 3.616076749251911,
-        "max" : 9.301444243932576,
-        "name" : "name",
-        "measurement_unit" : "measurement_unit",
-        "rank" : 2,
-        "description" : "description",
-        "id" : 5,
-        "per_100g" : 2.3021358869347655,
-        "footnote" : "footnote"
-      } ]
-    },
+    "nutrients" : [ {
+      "data_points" : 2,
+      "min" : 6.027456183070403,
+      "median" : 5.962133916683182,
+      "max" : 1.4658129805029452,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 5,
+      "description" : "description",
+      "per_100g" : 0.8008281904610115,
+      "footnote" : "footnote"
+    }, {
+      "data_points" : 2,
+      "min" : 6.027456183070403,
+      "median" : 5.962133916683182,
+      "max" : 1.4658129805029452,
+      "name" : "name",
+      "measurement_unit" : "measurement_unit",
+      "rank" : 5,
+      "description" : "description",
+      "per_100g" : 0.8008281904610115,
+      "footnote" : "footnote"
+    } ],
     "portions" : [ {
-      "data_points" : 3,
+      "data_points" : 1,
       "modifier" : "modifier",
-      "gram_weight" : 9.301444243932576,
+      "gram_weight" : 1.0246457001441578,
       "measurement_unit" : "measurement_unit",
       "description" : "description",
       "footnote" : "footnote"
     }, {
-      "data_points" : 3,
+      "data_points" : 1,
       "modifier" : "modifier",
-      "gram_weight" : 9.301444243932576,
+      "gram_weight" : 1.0246457001441578,
       "measurement_unit" : "measurement_unit",
       "description" : "description",
       "footnote" : "footnote"

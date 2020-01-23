@@ -7,14 +7,62 @@
 
 import Foundation
 
-/** An object containing nutrient information from each source */
+/** An object containing information for a specific nutrient found in this food item */
 public struct IngredientObjectNutrients: Codable {
 
 
-    /** An array containing an object for each nutrient data point as found in the USDA database */
-    public var usda: [BrandedFoodObjectNutrientsUsda]?
-    public init(usda: [BrandedFoodObjectNutrientsUsda]? = nil) { 
-        self.usda = usda
+    /** Nutrient name */
+    public var name: String?
+
+    /** Amount of the nutrient per 100g of food */
+    public var per100g: BigDecimal?
+
+    /** The unit used for the measure of this nutrient */
+    public var measurementUnit: String?
+
+    /** Minimum nutrient value */
+    public var min: BigDecimal?
+
+    /** Maximum nutrient value */
+    public var max: BigDecimal?
+
+    /** Median nutrient value */
+    public var median: BigDecimal?
+
+    /** Nutrient rank */
+    public var rank: Int?
+
+    /** Number of observations on which the value is based */
+    public var dataPoints: Int?
+
+    /** Comments on any unusual aspect of the food nutrient. Examples might include why a nutrient value is different than typically expected. */
+    public var footnote: String?
+
+    /** Description of the nutrient source */
+    public var _description: String?
+    public init(name: String? = nil, per100g: BigDecimal? = nil, measurementUnit: String? = nil, min: BigDecimal? = nil, max: BigDecimal? = nil, median: BigDecimal? = nil, rank: Int? = nil, dataPoints: Int? = nil, footnote: String? = nil, _description: String? = nil) { 
+        self.name = name
+        self.per100g = per100g
+        self.measurementUnit = measurementUnit
+        self.min = min
+        self.max = max
+        self.median = median
+        self.rank = rank
+        self.dataPoints = dataPoints
+        self.footnote = footnote
+        self._description = _description
+    }
+    public enum CodingKeys: String, CodingKey { 
+        case name
+        case per100g = "per_100g"
+        case measurementUnit = "measurement_unit"
+        case min
+        case max
+        case median
+        case rank
+        case dataPoints = "data_points"
+        case footnote
+        case _description = "description"
     }
 
 }
