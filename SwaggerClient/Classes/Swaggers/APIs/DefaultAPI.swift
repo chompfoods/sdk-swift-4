@@ -162,7 +162,6 @@ open class DefaultAPI {
       "compatibility_description" : "compatibility_description"
     } ],
     "countries" : [ "countries", "countries" ],
-    "footnote" : "footnote",
     "allergens" : [ "allergens", "allergens" ],
     "calorie_conversion_factor" : {
       "carbohydrate_value" : 1.0246457001441578,
@@ -304,7 +303,6 @@ open class DefaultAPI {
       "compatibility_description" : "compatibility_description"
     } ],
     "countries" : [ "countries", "countries" ],
-    "footnote" : "footnote",
     "allergens" : [ "allergens", "allergens" ],
     "calorie_conversion_factor" : {
       "carbohydrate_value" : 1.0246457001441578,
@@ -494,7 +492,6 @@ open class DefaultAPI {
       "compatibility_description" : "compatibility_description"
     } ],
     "countries" : [ "countries", "countries" ],
-    "footnote" : "footnote",
     "allergens" : [ "allergens", "allergens" ],
     "calorie_conversion_factor" : {
       "carbohydrate_value" : 1.0246457001441578,
@@ -636,7 +633,6 @@ open class DefaultAPI {
       "compatibility_description" : "compatibility_description"
     } ],
     "countries" : [ "countries", "countries" ],
-    "footnote" : "footnote",
     "allergens" : [ "allergens", "allergens" ],
     "calorie_conversion_factor" : {
       "carbohydrate_value" : 1.0246457001441578,
@@ -835,7 +831,6 @@ open class DefaultAPI {
       "compatibility_description" : "compatibility_description"
     } ],
     "countries" : [ "countries", "countries" ],
-    "footnote" : "footnote",
     "allergens" : [ "allergens", "allergens" ],
     "calorie_conversion_factor" : {
       "carbohydrate_value" : 1.0246457001441578,
@@ -977,7 +972,6 @@ open class DefaultAPI {
       "compatibility_description" : "compatibility_description"
     } ],
     "countries" : [ "countries", "countries" ],
-    "footnote" : "footnote",
     "allergens" : [ "allergens", "allergens" ],
     "calorie_conversion_factor" : {
       "carbohydrate_value" : 1.0246457001441578,
@@ -1186,7 +1180,6 @@ open class DefaultAPI {
       "compatibility_description" : "compatibility_description"
     } ],
     "countries" : [ "countries", "countries" ],
-    "footnote" : "footnote",
     "allergens" : [ "allergens", "allergens" ],
     "calorie_conversion_factor" : {
       "carbohydrate_value" : 1.0246457001441578,
@@ -1328,7 +1321,6 @@ open class DefaultAPI {
       "compatibility_description" : "compatibility_description"
     } ],
     "countries" : [ "countries", "countries" ],
-    "footnote" : "footnote",
     "allergens" : [ "allergens", "allergens" ],
     "calorie_conversion_factor" : {
       "carbohydrate_value" : 1.0246457001441578,

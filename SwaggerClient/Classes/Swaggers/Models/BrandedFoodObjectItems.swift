@@ -76,10 +76,7 @@ public struct BrandedFoodObjectItems: Codable {
 
     /** An array of keywords that can be used to describe this item */
     public var keywords: [String]?
-
-    /** Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
-    public var footnote: String?
-    public init(barcode: String? = nil, name: String? = nil, brand: String? = nil, ingredients: BrandedFoodObjectIngredients? = nil, package: BrandedFoodObjectPackage? = nil, serving: BrandedFoodObjectServing? = nil, categories: [String]? = nil, nutrients: BrandedFoodObjectNutrients? = nil, calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, dietFlags: [BrandedFoodObjectDietFlags]? = nil, packagingPhotos: BrandedFoodObjectPackagingPhotos? = nil, allergens: [String]? = nil, brandList: [String]? = nil, countries: [String]? = nil, countryDetails: BrandedFoodObjectCountryDetails? = nil, palmOilIngredients: [String]? = nil, ingredientList: [String]? = nil, hasEnglishIngredients: Bool? = nil, minerals: [String]? = nil, traces: [String]? = nil, vitamins: [String]? = nil, _description: String? = nil, keywords: [String]? = nil, footnote: String? = nil) { 
+    public init(barcode: String? = nil, name: String? = nil, brand: String? = nil, ingredients: BrandedFoodObjectIngredients? = nil, package: BrandedFoodObjectPackage? = nil, serving: BrandedFoodObjectServing? = nil, categories: [String]? = nil, nutrients: BrandedFoodObjectNutrients? = nil, calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, dietFlags: [BrandedFoodObjectDietFlags]? = nil, packagingPhotos: BrandedFoodObjectPackagingPhotos? = nil, allergens: [String]? = nil, brandList: [String]? = nil, countries: [String]? = nil, countryDetails: BrandedFoodObjectCountryDetails? = nil, palmOilIngredients: [String]? = nil, ingredientList: [String]? = nil, hasEnglishIngredients: Bool? = nil, minerals: [String]? = nil, traces: [String]? = nil, vitamins: [String]? = nil, _description: String? = nil, keywords: [String]? = nil) { 
         self.barcode = barcode
         self.name = name
         self.brand = brand
@@ -105,7 +102,6 @@ public struct BrandedFoodObjectItems: Codable {
         self.vitamins = vitamins
         self._description = _description
         self.keywords = keywords
-        self.footnote = footnote
     }
     public enum CodingKeys: String, CodingKey { 
         case barcode
@@ -133,7 +129,6 @@ public struct BrandedFoodObjectItems: Codable {
         case vitamins
         case _description = "description"
         case keywords
-        case footnote
     }
 
 }
