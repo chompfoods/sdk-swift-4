@@ -813,7 +813,7 @@ open class DefaultAPI {
      - parameter find: (query) Search our database for a single ingredient or a specific set of ingredients.  **Example #1: Single Ingredient** &gt; &#x60;&#x60;&#x60;&amp;find&#x3D;broccoli&#x60;&#x60;&#x60;  **Example #2: Set of Ingredients** &gt; &#x60;&#x60;&#x60;&amp;find&#x3D;broccoli,cauliflower,spinach&#x60;&#x60;&#x60;  **Important Notes**    * Comma-separated lists cannot contain more than **15 ingredients**. You must perform additional API calls if you are looking up more than 15 ingredients.       - parameter raw: (query) #### Optionally filter the search result to only include raw ingredients.  **Example** &gt; &#x60;&#x60;&#x60;&amp;raw&#x3D;true&#x60;&#x60;&#x60;  (optional)     - parameter limit: (query) #### Set maximum number of records you want the API to return, per search term.  **Example** &gt; &#x60;&#x60;&#x60;&amp;limit&#x3D;3&#x60;&#x60;&#x60;  (optional)
      - parameter completion: completion handler to receive the data and the error objects
      */
-    open class func foodIngredientSearchPhpGet(find: Int, raw: Bool? = nil, limit: Limit_foodIngredientSearchPhpGet? = nil, completion: @escaping ((_ data: IngredientObject?,_ error: Error?) -> Void)) {
+    open class func foodIngredientSearchPhpGet(find: String, raw: Bool? = nil, limit: Limit_foodIngredientSearchPhpGet? = nil, completion: @escaping ((_ data: IngredientObject?,_ error: Error?) -> Void)) {
         foodIngredientSearchPhpGetWithRequestBuilder(find: find, raw: raw, limit: limit).execute { (response, error) -> Void in
             completion(response?.body, error)
         }
@@ -1006,13 +1006,13 @@ open class DefaultAPI {
 
      - returns: RequestBuilder<IngredientObject> 
      */
-    open class func foodIngredientSearchPhpGetWithRequestBuilder(find: Int, raw: Bool? = nil, limit: Limit_foodIngredientSearchPhpGet? = nil) -> RequestBuilder<IngredientObject> {
+    open class func foodIngredientSearchPhpGetWithRequestBuilder(find: String, raw: Bool? = nil, limit: Limit_foodIngredientSearchPhpGet? = nil) -> RequestBuilder<IngredientObject> {
         let path = "/food/ingredient/search.php"
         let URLString = SwaggerClientAPI.basePath + path
         let parameters: [String:Any]? = nil
         var url = URLComponents(string: URLString)
         url?.queryItems = APIHelper.mapValuesToQueryItems([
-                        "find": find.encodeToJSON(), 
+                        "find": find, 
                         "raw": raw, 
                         "limit": limit?.rawValue
         ])
