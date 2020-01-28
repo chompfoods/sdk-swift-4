@@ -35,7 +35,13 @@ public struct IngredientObjectItems: Codable {
 
     /** Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
     public var footnote: String?
-    public init(name: String? = nil, categories: [String]? = nil, nutrients: [IngredientObjectNutrients]? = nil, calorieConversionFactor: IngredientObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, components: [IngredientObjectComponents]? = nil, portions: [IngredientObjectPortions]? = nil, commonName: String? = nil, footnote: String? = nil) { 
+
+    /** The original search term that found this food item. */
+    public var searchTerm: String?
+
+    /** A value that represents how similar the name of this food item is to the original search term. */
+    public var score: String?
+    public init(name: String? = nil, categories: [String]? = nil, nutrients: [IngredientObjectNutrients]? = nil, calorieConversionFactor: IngredientObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, components: [IngredientObjectComponents]? = nil, portions: [IngredientObjectPortions]? = nil, commonName: String? = nil, footnote: String? = nil, searchTerm: String? = nil, score: String? = nil) { 
         self.name = name
         self.categories = categories
         self.nutrients = nutrients
@@ -45,6 +51,8 @@ public struct IngredientObjectItems: Codable {
         self.portions = portions
         self.commonName = commonName
         self.footnote = footnote
+        self.searchTerm = searchTerm
+        self.score = score
     }
     public enum CodingKeys: String, CodingKey { 
         case name
@@ -56,6 +64,8 @@ public struct IngredientObjectItems: Codable {
         case portions
         case commonName = "common_name"
         case footnote
+        case searchTerm = "search_term"
+        case score
     }
 
 }

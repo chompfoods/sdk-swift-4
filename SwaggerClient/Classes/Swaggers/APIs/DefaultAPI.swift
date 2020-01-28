@@ -830,6 +830,7 @@ open class DefaultAPI {
      - examples: [{contentType=application/json, example={
   "items" : [ {
     "protein_conversion_factor" : 2.027123023002322,
+    "score" : "score",
     "calorie_conversion_factor" : {
       "carbohydrate_value" : 3.616076749251911,
       "protein_value" : 7.061401241503109,
@@ -849,6 +850,7 @@ open class DefaultAPI {
       "is_refuse" : true
     } ],
     "name" : "name",
+    "search_term" : "search_term",
     "categories" : [ "categories", "categories" ],
     "footnote" : "footnote",
     "common_name" : "common_name",
@@ -892,6 +894,7 @@ open class DefaultAPI {
     } ]
   }, {
     "protein_conversion_factor" : 2.027123023002322,
+    "score" : "score",
     "calorie_conversion_factor" : {
       "carbohydrate_value" : 3.616076749251911,
       "protein_value" : 7.061401241503109,
@@ -911,6 +914,7 @@ open class DefaultAPI {
       "is_refuse" : true
     } ],
     "name" : "name",
+    "search_term" : "search_term",
     "categories" : [ "categories", "categories" ],
     "footnote" : "footnote",
     "common_name" : "common_name",
