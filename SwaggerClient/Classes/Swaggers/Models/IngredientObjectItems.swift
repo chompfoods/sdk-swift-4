@@ -24,8 +24,6 @@ public struct IngredientObjectItems: Codable {
     /** The multiplication factor used to calculate protein from nitrogen */
     public var proteinConversionFactor: BigDecimal?
 
-    public var dietLabels: BrandedFoodObjectDietLabels?
-
     /** An array of objects containing the constituent parts of a food (e.g. bone is a component of meat) */
     public var components: [IngredientObjectComponents]?
 
@@ -35,22 +33,17 @@ public struct IngredientObjectItems: Codable {
     /** Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \&quot;BRAND&#x27;s Spicy Enchilada\&quot; the common name may be \&quot;Chicken enchilada\&quot;) */
     public var commonName: String?
 
-    /** A description of this item */
-    public var _description: String?
-
     /** Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
     public var footnote: String?
-    public init(name: String? = nil, categories: [String]? = nil, nutrients: [IngredientObjectNutrients]? = nil, calorieConversionFactor: IngredientObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, components: [IngredientObjectComponents]? = nil, portions: [IngredientObjectPortions]? = nil, commonName: String? = nil, _description: String? = nil, footnote: String? = nil) { 
+    public init(name: String? = nil, categories: [String]? = nil, nutrients: [IngredientObjectNutrients]? = nil, calorieConversionFactor: IngredientObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, components: [IngredientObjectComponents]? = nil, portions: [IngredientObjectPortions]? = nil, commonName: String? = nil, footnote: String? = nil) { 
         self.name = name
         self.categories = categories
         self.nutrients = nutrients
         self.calorieConversionFactor = calorieConversionFactor
         self.proteinConversionFactor = proteinConversionFactor
-        self.dietLabels = dietLabels
         self.components = components
         self.portions = portions
         self.commonName = commonName
-        self._description = _description
         self.footnote = footnote
     }
     public enum CodingKeys: String, CodingKey { 
@@ -59,11 +52,9 @@ public struct IngredientObjectItems: Codable {
         case nutrients
         case calorieConversionFactor = "calorie_conversion_factor"
         case proteinConversionFactor = "protein_conversion_factor"
-        case dietLabels = "diet_labels"
         case components
         case portions
         case commonName = "common_name"
-        case _description = "description"
         case footnote
     }
 
