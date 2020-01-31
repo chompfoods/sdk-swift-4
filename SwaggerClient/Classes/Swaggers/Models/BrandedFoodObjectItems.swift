@@ -20,7 +20,7 @@ public struct BrandedFoodObjectItems: Codable {
     /** The brand name that owns this item */
     public var brand: String?
 
-    /** Ingredients in order of highest value to least */
+    /** This food item&#x27;s ingredients from greatest quantity to least */
     public var ingredients: String?
 
     public var package: BrandedFoodObjectPackage?
@@ -29,12 +29,8 @@ public struct BrandedFoodObjectItems: Codable {
 
     public var categories: [String]?
 
-    public var nutrients: BrandedFoodObjectNutrients?
-
-    public var calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor?
-
-    /** The multiplication factor used to calculate protein from nitrogen */
-    public var proteinConversionFactor: BigDecimal?
+    /** An array containing nutrient informatio objects for this food item */
+    public var nutrients: [BrandedFoodObjectNutrients]?
 
     public var dietLabels: BrandedFoodObjectDietLabels?
 
@@ -42,12 +38,6 @@ public struct BrandedFoodObjectItems: Codable {
     public var dietFlags: [BrandedFoodObjectDietFlags]?
 
     public var packagingPhotos: BrandedFoodObjectPackagingPhotos?
-
-    /** An array of objects containing the constituent parts of a food (e.g. bone is a component of meat) */
-    public var components: [BrandedFoodObjectComponents]?
-
-    /** An array of objects containing information on discrete amounts of a food found in this item */
-    public var portions: [BrandedFoodObjectPortions]?
 
     /** An array of ingredients in this item that may cause allergic reactions in people */
     public var allergens: [String]?
@@ -75,18 +65,15 @@ public struct BrandedFoodObjectItems: Codable {
     /** An array of trace ingredients that may be found in this item */
     public var traces: [String]?
 
-    /** Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \&quot;BRAND&#x27;s Spicy Enchilada\&quot; the common name may be \&quot;Chicken enchilada\&quot;) */
-    public var commonName: String?
+    /** An array of vitamins that are found in this item */
+    public var vitamins: [String]?
 
     /** A description of this item */
     public var _description: String?
 
     /** An array of keywords that can be used to describe this item */
     public var keywords: [String]?
-
-    /** Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
-    public var footnote: String?
-    public init(barcode: String? = nil, name: String? = nil, brand: String? = nil, ingredients: String? = nil, package: BrandedFoodObjectPackage? = nil, serving: BrandedFoodObjectServing? = nil, categories: [String]? = nil, nutrients: BrandedFoodObjectNutrients? = nil, calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, dietFlags: [BrandedFoodObjectDietFlags]? = nil, packagingPhotos: BrandedFoodObjectPackagingPhotos? = nil, components: [BrandedFoodObjectComponents]? = nil, portions: [BrandedFoodObjectPortions]? = nil, allergens: [String]? = nil, brandList: [String]? = nil, countries: [String]? = nil, countryDetails: BrandedFoodObjectCountryDetails? = nil, palmOilIngredients: [String]? = nil, ingredientList: [String]? = nil, hasEnglishIngredients: Bool? = nil, minerals: [String]? = nil, traces: [String]? = nil, commonName: String? = nil, _description: String? = nil, keywords: [String]? = nil, footnote: String? = nil) { 
+    public init(barcode: String? = nil, name: String? = nil, brand: String? = nil, ingredients: String? = nil, package: BrandedFoodObjectPackage? = nil, serving: BrandedFoodObjectServing? = nil, categories: [String]? = nil, nutrients: [BrandedFoodObjectNutrients]? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, dietFlags: [BrandedFoodObjectDietFlags]? = nil, packagingPhotos: BrandedFoodObjectPackagingPhotos? = nil, allergens: [String]? = nil, brandList: [String]? = nil, countries: [String]? = nil, countryDetails: BrandedFoodObjectCountryDetails? = nil, palmOilIngredients: [String]? = nil, ingredientList: [String]? = nil, hasEnglishIngredients: Bool? = nil, minerals: [String]? = nil, traces: [String]? = nil, vitamins: [String]? = nil, _description: String? = nil, keywords: [String]? = nil) { 
         self.barcode = barcode
         self.name = name
         self.brand = brand
@@ -95,13 +82,9 @@ public struct BrandedFoodObjectItems: Codable {
         self.serving = serving
         self.categories = categories
         self.nutrients = nutrients
-        self.calorieConversionFactor = calorieConversionFactor
-        self.proteinConversionFactor = proteinConversionFactor
         self.dietLabels = dietLabels
         self.dietFlags = dietFlags
         self.packagingPhotos = packagingPhotos
-        self.components = components
-        self.portions = portions
         self.allergens = allergens
         self.brandList = brandList
         self.countries = countries
@@ -111,10 +94,9 @@ public struct BrandedFoodObjectItems: Codable {
         self.hasEnglishIngredients = hasEnglishIngredients
         self.minerals = minerals
         self.traces = traces
-        self.commonName = commonName
+        self.vitamins = vitamins
         self._description = _description
         self.keywords = keywords
-        self.footnote = footnote
     }
     public enum CodingKeys: String, CodingKey { 
         case barcode
@@ -125,13 +107,9 @@ public struct BrandedFoodObjectItems: Codable {
         case serving
         case categories
         case nutrients
-        case calorieConversionFactor = "calorie_conversion_factor"
-        case proteinConversionFactor = "protein_conversion_factor"
         case dietLabels = "diet_labels"
         case dietFlags = "diet_flags"
         case packagingPhotos = "packaging_photos"
-        case components
-        case portions
         case allergens
         case brandList = "brand_list"
         case countries
@@ -141,10 +119,9 @@ public struct BrandedFoodObjectItems: Codable {
         case hasEnglishIngredients = "has_english_ingredients"
         case minerals
         case traces
-        case commonName = "common_name"
+        case vitamins
         case _description = "description"
         case keywords
-        case footnote
     }
 
 }

@@ -12,27 +12,22 @@ public struct BrandedFoodObjectServing: Codable {
 
 
     /** Serving size */
-    public var size: Int?
+    public var size: String?
 
-    /** Serving measurement unit (e.g. if measure is 3 tsp, the unit is tsp) */
+    /** Measurement unit for each serving (e.g. if measure is 3 tsp, the unit is tsp) */
     public var measurementUnit: String?
 
     /** Serving size description */
     public var sizeFulltext: String?
-
-    /** Total servings */
-    public var total: Int?
-    public init(size: Int? = nil, measurementUnit: String? = nil, sizeFulltext: String? = nil, total: Int? = nil) { 
+    public init(size: String? = nil, measurementUnit: String? = nil, sizeFulltext: String? = nil) { 
         self.size = size
         self.measurementUnit = measurementUnit
         self.sizeFulltext = sizeFulltext
-        self.total = total
     }
     public enum CodingKeys: String, CodingKey { 
         case size
         case measurementUnit = "measurement_unit"
         case sizeFulltext = "size_fulltext"
-        case total
     }
 
 }

@@ -16,41 +16,43 @@ public struct IngredientObjectItems: Codable {
 
     public var categories: [String]?
 
-    public var nutrients: IngredientObjectNutrients?
+    /** An array containing nutrient informatio objects for this food item */
+    public var nutrients: [IngredientObjectNutrients]?
 
-    public var calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor?
+    public var calorieConversionFactor: IngredientObjectCalorieConversionFactor?
 
     /** The multiplication factor used to calculate protein from nitrogen */
     public var proteinConversionFactor: BigDecimal?
 
-    public var dietLabels: BrandedFoodObjectDietLabels?
-
     /** An array of objects containing the constituent parts of a food (e.g. bone is a component of meat) */
-    public var components: [BrandedFoodObjectComponents]?
+    public var components: [IngredientObjectComponents]?
 
     /** An array of objects containing information on discrete amounts of a food found in this item */
-    public var portions: [BrandedFoodObjectPortions]?
+    public var portions: [IngredientObjectPortions]?
 
-    /** Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \&quot;BRAND&#x27;s Spicy Enchilada\&quot; the common name may be \&quot;Chicken enchilada\&quot;) */
+    /** Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \&quot;BRAND&#x27;s Spicy Enchilada\&quot; the common name may be \&quot;Chicken enchilada\&quot;) */
     public var commonName: String?
 
-    /** A description of this item */
-    public var _description: String?
-
-    /** Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
+    /** Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall */
     public var footnote: String?
-    public init(name: String? = nil, categories: [String]? = nil, nutrients: IngredientObjectNutrients? = nil, calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, dietLabels: BrandedFoodObjectDietLabels? = nil, components: [BrandedFoodObjectComponents]? = nil, portions: [BrandedFoodObjectPortions]? = nil, commonName: String? = nil, _description: String? = nil, footnote: String? = nil) { 
+
+    /** The original search term that found this food item */
+    public var searchTerm: String?
+
+    /** A value that represents how similar the name of this food item is to the original search term. The lower the value the closer this item&#x27;s name is to the original search term. */
+    public var score: String?
+    public init(name: String? = nil, categories: [String]? = nil, nutrients: [IngredientObjectNutrients]? = nil, calorieConversionFactor: IngredientObjectCalorieConversionFactor? = nil, proteinConversionFactor: BigDecimal? = nil, components: [IngredientObjectComponents]? = nil, portions: [IngredientObjectPortions]? = nil, commonName: String? = nil, footnote: String? = nil, searchTerm: String? = nil, score: String? = nil) { 
         self.name = name
         self.categories = categories
         self.nutrients = nutrients
         self.calorieConversionFactor = calorieConversionFactor
         self.proteinConversionFactor = proteinConversionFactor
-        self.dietLabels = dietLabels
         self.components = components
         self.portions = portions
         self.commonName = commonName
-        self._description = _description
         self.footnote = footnote
+        self.searchTerm = searchTerm
+        self.score = score
     }
     public enum CodingKeys: String, CodingKey { 
         case name
@@ -58,12 +60,12 @@ public struct IngredientObjectItems: Codable {
         case nutrients
         case calorieConversionFactor = "calorie_conversion_factor"
         case proteinConversionFactor = "protein_conversion_factor"
-        case dietLabels = "diet_labels"
         case components
         case portions
         case commonName = "common_name"
-        case _description = "description"
         case footnote
+        case searchTerm = "search_term"
+        case score
     }
 
 }
